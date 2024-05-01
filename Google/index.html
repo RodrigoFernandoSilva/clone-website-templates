@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/Google_Icons-09-512.ico" type="image/x-icon">
+    <title>Google Clone</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/reset_style.css">
+    <link rel="stylesheet" href="css/index_style.css">
+    <link rel="stylesheet" href="css/visual_style.css">
+</head>
+<body>
+    <header>
+        <ul class="list-style-none ul-inline">
+            <li class="mouse-pointer mouse-underline header-main-li"><a href="#">Gmail</a></li>
+            <li class="mouse-pointer mouse-underline header-main-li"><a href="#">Imagens</a></li>
+            <li class="mouse-pointer header-main-li"><img id="header-grid-icon" src="imgs/grid.svg" alt="grid-icon" onclick="toggleGridShow()"></li>
+            <li class="header-main-li"><a href="#"><img src="imgs/mini_photo.jpg" alt="Mini photo" class="menu-mini-photo mouse-pointer"></a></li>
+        </ul>
+        <div id="header-grid">
+            <div id="header-grid-container">
+                <div id="header-grid-background">
+                    <ul class="header-grid-google">
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Conta</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Pesquisa</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Maps</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Youtube</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Play</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Notícia</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Gmail</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Meet</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Chat</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Contatos</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Drive</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Agenda</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Tradutor</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Fotos</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Minha central de notícias</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Chrome</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Shopping</p></div></li>
+                    </ul>
+                    <ul class="header-grid-office">
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Finanças</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Documentos</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Planilhas</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Apresentações</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Livros</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Blogger</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Keep</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Jamboard</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Google Sala de Aula</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Google Earth</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Salvo</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Google Arts & Culture</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Googles Ads</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Googles One</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Viagens</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Formulários</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Google Store</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Google Web Store</p></div></li>
+                        <li class="list-style-none header-grid-li mouse-pointer"><div class="header-grid-item"><img class="header-icon" src="imgs/Google_Icons-09-512.ico" alt="icon"><p class="header-text">Gerenciador de senhas</p></div></li>
+                    </ul>
+                    <button id="header-grid-button" class="mouse-pointer">Mais do Google</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form>
+            <img id="search-logo" src="imgs/google_logo.svg.webp" alt="Google logo">
+            <div id="search-wrapper">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" class="no-border" type="text">
+            </div>
+            <div id="buttons">
+                <button type="button" onclick="searchScreen()" class="no-border search-button mouse-pointer mouse-hover-border">Pesquisar Google</button>
+                <button type="button" class="no-border search-button mouse-pointer mouse-hover-border">Estou com sorte</button>
+                <!-- <input class="no-border search-button mouse-pointer" type="button" value="Pesquisar Google" onclick="searchScreen()">
+                <input class="no-border search-button mouse-pointer" type="button" value="Estou com sorte"> -->
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div id="country" class="ul-padding"><p>Brasil</p></div>
+        <div id="about" class="ul-inline">
+            <ul id="how-to-use" class="list-style-none ul-inline">
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Sobre</a></li>
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Publicidade</a></li>
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Negócios</a></li>
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Como funciona a Pesquisa</a></li>
+            </ul>
+
+            <ul id="configs" class="list-style-none ul-inline">
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Privacidade</a></li>
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Termos</a></li>
+                <li class="ul-padding mouse-pointer mouse-underline"><a href="#">Configurações</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="javascript/index_javascript.js"></script>
+</body>
+</html>

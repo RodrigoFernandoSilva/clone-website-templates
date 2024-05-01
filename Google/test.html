@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar altura ao passar o mouse</title>
+  <style>
+    /* Estilo para a grid */
+    .grid {
+      /* display: grid; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    /* Estilo para os itens da grid */
+    .item {
+      position: relative;
+      background-color: #f0f0f0;
+      width: 300px;
+      padding: 10px;
+      height: 30px;
+      /* Altura inicial do item */
+      /* overflow: hidden; */
+      /* Esconde qualquer conteúdo que ultrapasse as dimensões do item */
+      transition: height 0.3s;
+      /* Adiciona uma transição suave para a mudança de altura */
+    }
+
+    /* Estilo para os itens da grid quando o mouse passa por cima */
+    .item:hover {
+      /* height: 60px; */
+      /* Altura do item aumentada ao passar o mouse */
+
+      .item-child {
+        height: 100px;
+        background: red;
+        position: absolute;
+        z-index: 1;
+      }
+    }
+
+    .item-child {
+        width: calc(100% - 10px);
+        height: 10px;
+        background: red;
+        position: absolute;
+        z-index: 1;
+      }
+
+    
+  </style>
+</head>
+
+<body>
+  <div style="width: 100px; overflow-wrap: break-word;">asdasdasdasdasdasdasdasasdasdasdasasdasdasdasdasdasdasdasasdasdasdasasdasdasdasdasdasdasdasasdasdasdas</div>
+  <!-- Grid de itens -->
+  <div class="grid">
+    <div class="item">
+      <div class="item-child">Item 1</div>
+    </div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
