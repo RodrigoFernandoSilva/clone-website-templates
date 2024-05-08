@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/Google_Icons-09-512.ico" type="image/x-icon">
+    <title>Google Clone</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> -->
+
+    <link rel="stylesheet" href="../css/reset_style.css">
+    <link rel="stylesheet" href="../css/search_style.css">
+    <link rel="stylesheet" href="../css/visual_style.css">
+</head>
+<body>
+    <header>
+        <div id="search-header">
+            <a href="../index.html"><img id="search-logo" src="../img/google_logo.svg.webp" alt="Google logo"></a>
+            <!-- <input id="search-input" class="no-border" type="text"> -->
+            <div id="search-wrapper">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-input" class="no-border" type="text">
+            </div>
+        </div>
+        <div id="icons">
+            <ul class="list-style-none ul-inline">
+                <li class="mouse-pointer header-main-li" onclick="toggleGridShow()"><img id="header-grid-icon" src="../img/grid.svg" alt="grid-icon"></li>
+                <li><a href="#"><img src="../img/mini_photo.jpg" alt="Mini photo" class="menu-mini-photo mouse-pointer"></a></li>
+            </ul>
+            <iframe id="iframe-tool-grid" src="../html/tool_grid.html" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </header>
+    <main>
+        <div id="main-header">
+            <div id="main-list">
+                <div id="main-list-left">
+                    <ul id="main-header-abas" class="list-style-none ul-inline">
+                        <li class="mouse-pointer">Todos</li>
+                        <li class="mouse-pointer">Shopping</li>
+                        <li class="mouse-pointer">Imagens</li>
+                        <li class="mouse-pointer">Videos</li>
+                        <li class="mouse-pointer">Noticias</li>
+                        <li class="mouse-pointer">Mais</li>
+                    </ul>
+    
+                    <ul id="main-header-tools" class="list-style-none ul-inline">
+                        <li class="mouse-pointer">Ferramentas</li>
+                    </ul>
+                </div>
+
+                <select id="safeSearch-dropdown">
+                    <option disabled selected hidden>SafeSearch</option>
+                    <option value="maca">Fíltar resultado com conteúdo explícito</option>
+                    <option value="banana">Desfocar imagens explicitas</option>
+                    <option value="laranja">Desativado</option>
+                </select>
+                <!-- <ul id="main-list-right" class="list-style-none ul-inline">
+                    <li class="mouse-pointer">SafeSearch</li>
+                </ul> -->
+            </div>
+            <div id="main-similar">
+                <div class="angle-left-container">
+                    <img id="angle-left" class="mouse-pointer" src="../img/angle-left.svg" alt="angle left">
+                </div>
+                <ul id="main-similar-ul" class="list-style-none ul-inline">
+                    <li class="mouse-pointer">Similar</li>
+                    <li class="mouse-pointer">Similar 0</li>
+                    <li class="mouse-pointer">Big similar text</li>
+                    <li class="mouse-pointer">Similar 1</li>
+                    <li class="mouse-pointer">Similar 2</li>
+                    <li class="mouse-pointer">Similar text</li>
+                    <li class="mouse-pointer">Big similar text 0</li>
+                    <li class="mouse-pointer">Similar 3</li>
+                    <li class="mouse-pointer">Similar 4</li>
+                    <li class="mouse-pointer">Similar 5</li>
+                    <li class="mouse-pointer">Similar 6</li>
+                    <li class="mouse-pointer">Big similar text 1</li>
+                    <li class="mouse-pointer">Similar 7</li>
+                    <li class="mouse-pointer">Big similar text 2</li>
+                    <li class="mouse-pointer">Similar 8</li>
+                    <li class="mouse-pointer">Big similar text 3</li>
+                    <li class="mouse-pointer">Similar 9</li>
+                    <li class="mouse-pointer">Similar 10</li>
+                </ul>
+                <div class="angle-right-container">
+                    <img id="angle-right" class="mouse-pointer" src="../img/angle-right.svg" alt="angle right">
+                </div>
+            </div>
+        </div>
+        <div id="main-result">
+            <div id="main-left"></div>
+            <div id="main-right"></div>
+        </div>
+    </main>
+
+    <script src="../js/tool_grid_js.js"></script>
+    <script src="../js/search_js.js"></script>
+</body>
+</html>

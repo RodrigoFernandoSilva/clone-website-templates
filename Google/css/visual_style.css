@@ -1,3 +1,15 @@
+#iframe-tool-grid {
+    position: absolute;
+    width: 320px;
+    height: 400px;
+    margin-top: 45px;
+    right: 25px;
+}
+
+#header-grid-icon {
+    width: 24px;
+}
+
 .ul-padding {
     padding: 0.4rem;
 }
@@ -52,6 +64,8 @@
 
 #search-icon {
     position: relative;
+    margin-left: 10px;
+    width: 15px;
 }
 
 #search-wrapper {
@@ -74,10 +88,6 @@
 #search-input:-webkit-autofill:focus, 
 #search-input:-webkit-autofill:active{
     -webkit-box-shadow: 0 0 0 30px white inset !important;
-}
-
-#search-icon {
-    margin-left: 10px;
 }
 
 #search-input:focus-visible {
