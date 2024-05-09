@@ -13,7 +13,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: 70px;
-    background: yellow;
+    /* background: yellow; */
     width: 100%;
     padding-left: 20px;
     padding-right: 40px;
@@ -58,13 +58,13 @@ header a {
 
 header a, header img {
     height: 75%;
-    background: yellow;
+    /* background: yellow; */
 }
 
 main {
     display: flex;
     flex-direction: column;
-    background: red;
+    /* background: red; */
     height: 100%;
     width: 100%;
     padding-left: 200px;
@@ -74,14 +74,14 @@ main {
     display: flex;
     flex-direction: column;
     height: 100px;
-    background: orange;
+    /* background: orange; */
 }
 
 #main-result {
     display: flex;
     flex-direction: row;
     flex: 1;
-    background: blue;
+    /* background: blue; */
 }
 
 #main-list {
@@ -90,7 +90,7 @@ main {
     justify-content: space-between;
     flex: 1;
     padding-right: 40px;
-    background: gainsboro;
+    /* background: gainsboro; */
 }
 
 #main-list-left {
@@ -100,17 +100,19 @@ main {
 
 #main-header-abas {
     margin-right: 240px;
+    height: 30px;
 }
 
 #main-header-abas li {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 #main-similar {
     display: flex;
     flex-direction: row;
-    flex: 1;
-    background: brown;
+    height: 50px;
+    /* flex: 1; */
+    /* background: brown; */
     margin-right: 200px;
 }
 
@@ -118,9 +120,6 @@ main {
     overflow: hidden;
     padding-top: 12px;
     padding-bottom: 12px;
-    /* display: inline;
-    display: flex;
-    flex-direction: row; */
     white-space: nowrap;
     height: 100%;
     gap: 20px;
@@ -138,15 +137,23 @@ main {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: greenyellow;
-    width: 80px;
+    width: 110px;
+}
+
+.angle-right-container {
+    background: linear-gradient(to right, transparent, white);
+}
+
+.angle-left-container {
+    background: linear-gradient(to left, transparent, white);
 }
 
 #angle-right, #angle-left {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     padding: 5px;
-    background: yellow;
+    /* margin: 5px; */
+    border: 2px solid #dbdbdb;
     border-radius: 20px;
 }
 
@@ -158,38 +165,57 @@ main {
 
 #main-similar-ul li {
     display: flex;
-    background: yellow;
+    border: 2px solid #dbdbdb;
     text-align: center;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
-    height: 100%;
+    height: 35px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 18px;
 }
 
-#main-similar-ul li:first-child {
-    background: red;
-}
-
-#main-similar-ul li:last-child {
-    background: red;
+#main-similar-ul li:hover, #angle-right:hover, #angle-left:hover {
+    background: #e4e4e4;
 }
 
 #main-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
     width: 700px;
-    background: green;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* background: orange; */
 }
 
 #main-right {
     flex: 1;
-    background: aqua;
+    /* background: aqua; */
+}
+
+#about {
+    /* background: red; */
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 2px solid #dbdbdb;
+}
+
+#about-header, #about-text {
+    padding: 10px;
+}
+
+#about-header {
+    border-bottom: 2px solid yellow;
 }
 
 @media (max-width: 1300px) {
     main, header {
-        background: cadetblue;
+        /* background: cadetblue; */
         padding-left:  calc((100vw - 1180px));
     }
 
@@ -204,7 +230,7 @@ main {
 
 @media (max-width: 1200px) {
     main, header {
-        background: red;
+        /* background: red; */
         padding-left:  18px;
     }
 }
